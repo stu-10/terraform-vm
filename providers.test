@@ -1,0 +1,17 @@
+terraform {
+  required_providers {
+    nutanix = {
+      source = "nutanix/nutanix"
+      version = "1.2.0"
+    }
+  }
+}
+
+provider "nutanix" {
+  # Configuration options
+  username  = "stuart.jennings@ukdemo.local"
+  password  = "Nutanix123!!!"
+  endpoint  = "192.168.2.50"
+  insecure  = true
+  port      = 9440
+}
